@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import * as firebase from 'firebase';
+
+const config = {
+  apiKey: '<YOUR-API-KEY>',
+  authDomain: '<YOUR-AUTH-DOMAIN>',
+  databaseURL: 'https://<YOUR-DATABASE-NAME>.firebaseio.com',
+  projectId: '<YOUR-PROJECT-ID>',
+  storageBucket: '<YOUR-STORAGE-BUCKET>.appspot.com',
+  messagingSenderId: '<YOUR-MESSAGING-SENDER-ID>'
+};
+export default firebase.initializeApp(config);
 
 class App extends Component {
   render() {
