@@ -7,11 +7,11 @@ import 'firebase/datastore';
 
 // Initalize and export Firebase.
  const config = {
-    apiKey: "AIzaSyD00jCiU85omP1DJEjo9zEGFRvW2HS2Nwo",
-    authDomain: "homeless-66617.firebaseapp.com",
-    databaseURL: "https://homeless-66617.firebaseio.com",
-    projectId: "homeless-66617",
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.URL,
+    projectId: process.env.PROJECT_URL,
     storageBucket: "",
-    messagingSenderId: "82465353024"
+    messagingSenderId: process.env.SENDER_ID
   };
 export default firebase.initializeApp(config);
