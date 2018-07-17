@@ -16,6 +16,5 @@ export default (props) => (
         <Route path='/map' component={MapPage} />
         <Route path='/create' component={CreateProfilePage} />
     </Switch>
-
   </Router>
 )
